@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main_background" >    
+        
+    <TextView 
+        android:id="@+id/textview"         
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:text="텍스트입니다."
+        android:textSize="20dp"
+        
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/round_background"
+        
+        />
+    <WebView
+        android:id="@+id/webview"         
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/textview"
+         />
+    <Button 
+        android:id="@+id/calljs"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@id/webview"
+        android:onClick="jsCall"
+		android:text="자바스크립트 호출"        
+        />
+    
+
+</RelativeLayout>
